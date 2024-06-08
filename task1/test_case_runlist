@@ -1,0 +1,16 @@
+# This is a list of all the test cases to avoid confusion for Part F.
+./problem1a test_cases/1a-1-seqA.txt test_cases/1a-1-seqB.txt
+./problem1a test_cases/1a-2-seqA.txt test_cases/1a-2-seqB.txt
+./problem1a test_cases/1a-3-seqA.txt test_cases/1a-3-seqB.txt
+./problem1a test_cases/1a-4-seqA.txt test_cases/1a-4-seqB.txt
+./problem1a test_cases/1a-5-seqA.txt test_cases/1a-5-seqB.txt
+./problem1d test_cases/1d-1-seqA.txt test_cases/1d-1-seqB.txt 3
+./problem1d test_cases/1d-2-seqA.txt test_cases/1d-2-seqB.txt 4
+./problem1d test_cases/1d-3-seqA.txt test_cases/1d-3-seqB.txt 4
+./problem1d test_cases/1d-4-seqA.txt test_cases/1d-4-seqB.txt 2
+./problem1d test_cases/1d-5-seqA.txt test_cases/1d-5-seqB.txt 1
+./problem1f test_cases/1f-1-seqA.txt test_cases/1f-1-seqB.txt 10
+./problem1f test_cases/1f-2-seqA.txt test_cases/1f-2-seqB.txt 23
+./problem1f test_cases/1f-3-seqA.txt test_cases/1f-3-seqB.txt 12
+./problem1f test_cases/1f-4-seqA.txt test_cases/1f-4-seqB.txt 14
+./problem1f test_cases/1f-5-seqA.txt test_cases/1f-5-seqB.txt 96

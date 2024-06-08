@@ -1,0 +1,11 @@
+10
+cleaner
+clean
+lean
+opera
+open
+pants
+panel
+pager
+speak
+team

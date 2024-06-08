@@ -1,0 +1,5 @@
+clean
+lean
+open
+pager
+panel
