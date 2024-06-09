@@ -45,6 +45,39 @@ void readSequence(FILE *seqFile, int *seqLen, long double **seq);
 long double ** malloc2dMatrix(int row, int col);
 void free2dMatrix(long double ** matrix, int row);
 
+/* Define getdelim since the method is not available for my compiler.
+Doesn't support multi-threading */
+size_t getdelim(char **lineptr, size_t *n, int delim, FILE *stream){
+    if (lineptr == NULL || n == NULL || stream == NULL){
+      return -1;
+    }
+
+    int length = 0;
+    char c;
+    // Get the length for malloc
+    while ((c = fgetc(stream)) != delim){
+        if (c == EOF){
+            break;
+        }
+        length++;
+    }
+
+    char* string = (char *) malloc(sizeof(char) * (length + 1));
+    
+    // Move the pointer back to scan the string
+    fseek(stream, -length, SEEK_CUR);
+    for (int i=0; i < length; i++){
+        string[i] = fgetc(stream);
+    }
+    string[length] = '\0';
+
+    *lineptr = string;
+    *n = length;
+
+    return length;
+}
+
+
 void readSequence(FILE *seqFile, int *seqLen, long double **seq){
     char *seqText = NULL;
     /* Read in text. */
