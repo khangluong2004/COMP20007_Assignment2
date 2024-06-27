@@ -1,8 +1,12 @@
-# COMP20007 Assignment 2
+# COMP20007 Assignment 2 (Mark: 19.5/20)
 ## Acknowledgement
 All questions and skeleton code is from COMP20007 Sem 1 2024 (UniMelb), as specified in each file.
 
 The main implementation is implemented by me, located in the file problem.c mainly (although additional data structures might be implemented as well).
+
+## Note:
+For task 1 part E written report, there's a typo where best case analysis is denoted as Theta, while it should be
+Omega. 
 
 ## Task 1: Dynamic Time Warping (DP)
 
